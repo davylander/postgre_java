@@ -4,10 +4,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		//insert("Ser Cancedeletado","cancelado.del@gmail.com");
-		select();
+		//insert("Paulilo Albino","pauliloneto@gmail.com");
+		//select();
 		//update("Davi Souto Neri","davisouto.if@gmail.com",1);
-		//delete(7);
+		//delete(1);
 		
 		
 	}

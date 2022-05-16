@@ -22,7 +22,7 @@ public class ConexaoDiario {
 		}
 	}
 	
-	public int executarSQL(String sql) {
+	public int executarComandosSQL(String sql) {
 		try {
 			Statement statement = conexao.createStatement();
 			int resposta = statement.executeUpdate(sql);
@@ -34,7 +34,14 @@ public class ConexaoDiario {
 	}
 	
 	public ResultSet executaBuscaSQL(String sql) {
-		
+		try {
+			Statement statement = conexao.createStatement();
+			ResultSet resultSet = statement.executeQuery(sql);
+			return resultSet;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
 	}
 	
 }
